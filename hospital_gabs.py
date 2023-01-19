@@ -21,7 +21,7 @@ doze_a_dezessete = 0
 dezoito_a_vinte_e_cinco = 0
 vinte_e_seis_a_trinta_e_cinco = 0
 trinta_e_seis_a_cinquenta_e_nove = 0
-sessenta_e_um_ou_mais = 0
+maior_ou_igual_a_sessenta = 0
 
 
 perguntar_idade = True
@@ -51,10 +51,10 @@ while perguntar_idade:
         trinta_e_seis_a_cinquenta_e_nove += 1
     
     elif idade >= 60:
-        sessenta_e_um_ou_mais += 1
+        maior_ou_igual_a_sessenta += 1
 
     
-total_de_pacientes = zero_a_onze + doze_a_dezessete + dezoito_a_vinte_e_cinco + vinte_e_seis_a_trinta_e_cinco + trinta_e_seis_a_cinquenta_e_nove + sessenta_e_um_ou_mais
+total_de_pacientes = zero_a_onze + doze_a_dezessete + dezoito_a_vinte_e_cinco + vinte_e_seis_a_trinta_e_cinco + trinta_e_seis_a_cinquenta_e_nove + maior_ou_igual_a_sessenta
 
 print(f''' 
     0-11 anos: {zero_a_onze / total_de_pacientes * 100:.2f} %
@@ -62,6 +62,6 @@ print(f'''
     18-25 anos: {dezoito_a_vinte_e_cinco / total_de_pacientes * 100:.2f} %
     26-35 anos: {vinte_e_seis_a_trinta_e_cinco / total_de_pacientes * 100:.2f} %
     36-59 anos: {trinta_e_seis_a_cinquenta_e_nove / total_de_pacientes * 100:.2f} %
-    Acima de 60 anos: {sessenta_e_um_ou_mais / total_de_pacientes * 100:.2f} %
+    Acima de 60 anos: {maior_ou_igual_a_sessenta / total_de_pacientes * 100:.2f} %
 ''')
 
